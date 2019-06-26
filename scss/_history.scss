@@ -1,0 +1,36 @@
+#history {
+    overflow: hidden;
+    margin-top: 100px;
+    position: relative;
+
+    .container {
+        position: relative;
+        padding: 30px 50px;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $primary;
+            clip-path: polygon(16% 4%, 100% 0, 0 100%, 0 100%, 0 21%);
+        }
+    }
+
+    h2 {
+        margin: 30px auto;
+    }
+
+    .content {
+        margin-top: 30px;
+        width: 320px
+    }
+
+    @media (max-width: 768px) {
+        background: $primary;
+        color: $beige;
+    }
+}

@@ -1,0 +1,53 @@
+#header {
+    min-height: 100vh;
+
+    .heading {
+        position: relative;
+        height: 600px;
+        margin-bottom: 50px;
+
+        h1 {
+            height: 100%;
+        }
+
+        h1 img {
+            position: absolute;
+            margin: 0 auto;
+
+            &.stl-logo-bg {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &.stl-logo {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            &.stl-bottle {
+                left: 60px;
+                right: 0;
+                bottom: 0;
+            }
+
+            &.stl-glass {
+                left: 0;
+                right: 80px;
+                bottom: 0;
+            }
+        }
+    }
+
+    .header_content {
+        max-width: 550px;
+        margin: 0 auto 30px auto;
+    }
+
+    .btn-custom {
+        width: 310px;
+    }
+}

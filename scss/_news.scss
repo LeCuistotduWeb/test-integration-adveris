@@ -1,0 +1,99 @@
+#news {
+    margin-top: 100px;
+
+    .news-1,
+    .news-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 15px;
+
+        .news-text_content {
+            background: $secondary;
+            padding: 30px;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .news-1 {
+            img {
+                order: 1;
+                max-height: 270px;
+                transform: translate(-16px, 45px);
+            }
+
+            .news-text_content {
+                order: 0;
+                max-width: 300px;
+            }
+        }
+
+        .news-2 {
+            img {
+                order: 0;
+                max-height: 270px;
+                transform: translate(16px, 45px);
+            }
+
+            .news-text_content {
+                order: 1;
+                max-width: 300px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .news-1 {
+            img {
+                order: 1;
+                width: 470px;
+                max-height: 100%;
+                z-index: 200;
+                transform: none;
+                margin: 90px 0 0 -70px;
+            }
+
+            .news-text_content {
+                order: 0;
+                max-width: 500px;
+                height: 370px;
+                padding: 60px 110px 50px 90px;
+                clip-path: polygon(5% 4%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+
+        .news-2 {
+            position: relative;
+            margin-top: 50px;
+
+            img {
+                max-width: 470px;
+                max-height: 350px;
+                z-index: 200;
+                transform: none;
+                margin: -25px -70px 0 0px;
+            }
+
+            .news-text_content {
+                max-width: 470px;
+                height: 450px;
+                clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                padding: 110px 70px 30px 110px;
+            }
+        }
+    }
+
+    .btn-custom {
+        width: 150px;
+        border-top: 40px solid #b5211d;
+
+        span {
+            top: -30px;
+        }
+    }
+}

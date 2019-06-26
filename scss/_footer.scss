@@ -1,0 +1,36 @@
+#footer {
+    .logo-facebook {
+        width: 15px;
+    }
+
+    .logo-twitter {
+        width: 28px;
+    }
+
+    .logo-linkedin {
+        width: 28px;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-family: Roboto;
+    }
+
+    ul {
+        font-size: 1rem;
+        color: lightgrey;
+
+        li {
+            font-size: 0.875rem;
+            margin-bottom: 1.2rem;
+
+            a {
+                color: #727272;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}

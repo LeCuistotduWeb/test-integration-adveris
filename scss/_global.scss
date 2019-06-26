@@ -1,0 +1,31 @@
+body {
+    background-color: $beige;
+    font-family: Roboto;
+    font-weight: 400;
+    color: $dark;
+    font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+    color: #484848;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    animation-duration: 3s;
+    animation-name: fadeInTop;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}

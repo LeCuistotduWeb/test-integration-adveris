@@ -1,0 +1,47 @@
+#collab {
+    margin-top: 100px;
+
+    .book_container {
+        height: 520px;
+
+        & .book {
+            z-index: 100;
+        }
+
+        & .book1 {
+            transform: rotate(-30deg) translateX(-30%) translateY(-2%);
+        }
+
+        & .book2 {
+            z-index: 200;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+
+        & .book3 {
+            transform: rotate(30deg) translateX(40%) translateY(-2%);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .book_container {
+            height: 350px;
+
+            .book {
+                max-width: 200px;
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 540px) {
+        .book_container {
+            height: 160px;
+
+            .book {
+                max-width: 100px;
+                width: 100%;
+            }
+        }
+    }
+}

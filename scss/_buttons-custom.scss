@@ -1,0 +1,30 @@
+.btn-custom-white,
+.btn-custom {
+    position: relative;
+    width: 200px;
+    height: 0;
+    text-align: center;
+    border-right: 20px solid transparent;
+    border-top: 60px solid $primary;
+    border-left: 30px solid transparent;
+    border-radius: 0;
+    transform: rotate(-1deg);
+    span {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        color: white;
+        transform: rotate(1deg);
+    }
+    &:hover {
+        transition: all .3s;
+        transform: scale(1.1);
+    }
+}
+.btn-custom-white {
+    border-top: 50px solid white;
+    span {
+        color: $dark;
+    }
+}

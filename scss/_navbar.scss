@@ -1,0 +1,30 @@
+#navbarTop {
+    ul:nth-child(2) {
+        margin-left: 120px;
+    }
+}
+
+#navbarMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px 20px;
+    background: $beige;
+    z-index: 200;
+}
+
+.btn-menu{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 500;
+    border: none;
+    background: $beige;
+    border-radius: 0;
+    :hover {
+        transition: all .3s;
+        transform: scale(1.1);
+    }
+}
